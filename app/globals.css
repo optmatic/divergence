@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 140 30% 98%;
+    --foreground: 140 10% 15%;
+
+    --card: 140 30% 99%;
+    --card-foreground: 140 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 10% 15%;
+
+    --primary: 140 40% 35%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 30 25% 90%;
+    --secondary-foreground: 30 10% 30%;
+
+    --muted: 140 10% 95%;
+    --muted-foreground: 140 5% 45%;
+
+    --accent: 120 30% 10%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 140 20% 85%;
+    --input: 140 20% 85%;
+    --ring: 120 30% 10%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 140 20% 10%;
+    --foreground: 140 10% 90%;
+
+    --card: 140 20% 12%;
+    --card-foreground: 140 10% 90%;
+
+    --popover: 140 20% 12%;
+    --popover-foreground: 140 10% 90%;
+
+    --primary: 140 40% 35%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 30 25% 20%;
+    --secondary-foreground: 30 10% 90%;
+
+    --muted: 140 10% 20%;
+    --muted-foreground: 140 5% 65%;
+
+    --accent: 120 30% 5%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 140 20% 25%;
+    --input: 140 20% 25%;
+    --ring: 120 30% 5%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+  p {
+    @apply font-cursive;
+  }
+}
+
+/* Subtle sidebar background */
+.sidebar-bg {
+  background-color: #f2f7f4;
+}
+
+/* Custom button styles with woody green accent */
+.btn-accent {
+  @apply bg-wood-900 text-white hover:bg-wood-950 focus:ring-2 focus:ring-wood-800 focus:ring-offset-2;
+}
+
+/* Tag transition */
+.tag {
+  @apply transition-all duration-200;
+}
