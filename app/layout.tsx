@@ -16,10 +16,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Faith, Politics, and the Teachings of Christ",
+  title: "divergence",
   description:
     "An informative comparison between the teachings of Jesus Christ and the statements and policies of Donald Trump",
-  generator: "v0.dev",
 };
 
 export default function RootLayout({
